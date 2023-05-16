@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-fondo: rgb(202, 199, 164);
+  --color-letra-nav: rgb(250, 250, 250);
+  --titulos: "Days One, sans-serif";
+  --hover-nav: orangered;
+  --precios: rgb(112, 111, 110);
+}
+
+body {
+  font-family: "Days One", sans-serif;
+}
+/*----------------------------------------REDES FLOTANTE-------------------------------------------*/
+#btn-mas {
+  display: none;
+}
+.container {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  z-index: 3;
+}
+.redes a,
+.icon-mas {
+  display: block;
+  text-align: center;
+  line-height: 55px;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: var(--color-letra-nav);
+  border-radius: 10px;
+  color: var(--color-fondo);
+  width: 55px;
+  height: 55px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.redes a:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+}
+.redes a {
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.icon-mas {
+  cursor: pointer;
+  background: var(--precios);
+}
+#btn-mas:checked ~ .btn-mas .icon-mas {
+  transform: rotate(137deg);
+  border-radius: 50%;
+  font-size: 3rem;
+}
+/*-----------------------------------------MENU DEL DIA--------------------------------------------*/
+.menu__dia--titlePrincipal {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+}
+.menu__dia {
+  background-color: var(--color-fondo);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 5px solid white;
+}
+.menu__dia--contenido {
+  margin: 1rem 0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 8px 12px black;
+}
+.menu__dia--contenido:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: none;
+}
+.menu__dia--title {
+  margin: 1rem 0 0.5rem 0;
+}
+.menu__dia--img {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.menu__dia--title,
+.menu__dia--parrafo,
+.menu__dia--precio {
+  color: var(--color-letra-nav);
+}
+.menu__dia--parrafo {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  height: 1rem;
+}
+.menu__dia--precio {
+  padding-top: 2rem;
+  text-align: end;
+  color: var(--precios);
+}
+/*-----------------------------------------MENU COTIDIANO--------------------------------------------*/
+.menu__cotidiano--titlePrincipal {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+}
+.menu__cotidiano {
+  background-color: var(--color-fondo);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 5px solid white;
+}
+.menu__cotidiano--contenido {
+  margin: 1rem 0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 8px 12px black;
+}
+.menu__cotidiano--contenido:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: none;
+}
+.menu__cotidiano--title {
+  margin: 1rem 0 0.5rem 0;
+}
+.menu__cotidiano--img {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.menu__cotidiano--title,
+.menu__cotidiano--parrafo,
+.menu__cotidiano--precio {
+  color: var(--color-letra-nav);
+}
+.menu__cotidiano--parrafo {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  height: 1rem;
+}
+.menu__cotidiano--precio {
+  padding-top: 2rem;
+  text-align: end;
+  color: var(--precios);
+}
+/*--------------------------------------------MODAL----------------------------------------------*/
+
+.modal {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+}
+.modal__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.modal__img {
+  width: 50%;
+}
+.modal__boton {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  color: var(--color-fondo);
+  cursor: pointer;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: var(--color-letra-nav);
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.modal__boton--acceso-ref {
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  bottom: 50px;
+  color: var(--color-fondo);
+  cursor: pointer;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background: var(--color-letra-nav);
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.modal__boton--acceso-ref:hover {
+  cursor: pointer;
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+  font-weight: bold;
+}
+.modal--open {
+  display: block;
+}
+
+/*-----------------------------------------MEDIAQUERY--------------------------------------------*/
+@media screen and (max-width: 390px) {
+  .menu__cotidiano--contenido {
+    display: flex;
+
+    width: 43%;
+    height: 10px;
+    font-size: 0.5rem;
+  }
+
+  .redes a,
+  .icon-mas {
+    line-height: 55px;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+  }
+  .container {
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu__cotidiano--contenido,
+  .menu__dia--contenido:hover {
+    transform: none;
+    width: 43%;
+    height: 200px;
+    font-size: 2rem;
+  }
+  .modal__img {
+    width: 80%;
+  }
+  .container {
+    bottom: 10px;
+  }
+  .redes a,
+  .icon-mas {
+    line-height: 35px;
+    font-size: 2rem;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .menu__cotidiano--contenido {
+    margin: 10px;
+    font-size: 0.7rem;
+  }
+  .modal__img {
+    width: 70%;
+  }
+  .container {
+    bottom: 10px;
+  }
+  .redes a,
+  .icon-mas {
+    line-height: 35px;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1261px) {
+  .menu__cotidiano--contenido {
+    margin: 10px;
+    height: auto;
+    font-size: 1rem;
+  }
+  .modal__img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .container {
+    bottom: 10px;
+  }
+  .redes a,
+  .icon-mas {
+    line-height: 50px;
+    font-size: 2rem;
+    width: 55px;
+    height: 55px;
+  }
+}

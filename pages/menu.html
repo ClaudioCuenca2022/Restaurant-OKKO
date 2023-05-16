@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/OKKO-logos.jpeg"
+      type="image/x-icon"
+      title="OKKO "
+    />
+    <!--Fuente de los iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Fuente de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--Estilos-->
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <title>Restorant OKKO-Menú</title>
+  </head>
+  <body>
+    <!--Redes Flotante-->
+    <div class="container">
+      <input type="checkbox" id="btn-mas" />
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="btn-mas">
+        <label for="btn-mas" class="icon-mas">+</label>
+      </div>
+    </div>
+    <!--Modal-->
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <img src="" alt="" class="modal__img" id="modal__img" />
+      </div>
+      <div class="modal__boton" id="modal__boton">X</div>
+      <a class="modal__boton--acceso-ref" href="./acceso.html">Comprar</a>
+    </div>
+    <!--Fin del modal-->
+    <header class="encabezado">
+      <div class="encabezado__contenedor">
+        <div class="encabezado__contenedor--navegacion">
+          <div>
+            <a href="../index.html"
+              ><img
+                src="../img/OKKO-logos.jpeg"
+                class="header__logo"
+                alt="logo-okko"
+            /></a>
+          </div>
+          <nav id="nav" class="navegacion ocultar">
+            <a href="../index.html">Home</a>
+            <a href="menu.html" class="active">Menú</a>
+            <a href="#">Locales </a>
+            <a href="#">Chefs</a>
+            <a href="./acceso.html">Contacto</a>
+          </nav>
+          <div id="hamburguesa" class="hamburguesa">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <img class="banner__img" src="../img/info.png" alt="" />
+      <div class="banner__content">
+        Aquí podras ver los Menúes y sus valores, elegí el tuyo y a disfrutar!
+      </div>
+    </section>
+    <main>
+      <article class="menu__dia--contenedor">
+        <div>
+          <h2 class="menu__dia--titlePrincipal">Especiales del dia</h2>
+        </div>
+        <section class="menu__dia">
+          <div class="menu__dia--contenido">
+            <h2 class="menu__dia--title">Menú especial N° 1</h2>
+            <img src="../img/pasta2.webp" alt="" class="menu__dia--img" />
+            <p class="menu__dia--parrafo">
+              Pastas al Curri con lluvia de queso
+            </p>
+            <p class="menu__dia--precio">$1200</p>
+          </div>
+          <div class="menu__dia--contenido">
+            <h2 class="menu__dia--title">Menú especial N° 2</h2>
+            <img src="../img/pizza2.webp" alt="" class="menu__dia--img" />
+            <p class="menu__dia--parrafo">Pizza Calabressa al molde</p>
+            <p class="menu__dia--precio">$1600</p>
+          </div>
+          <div class="menu__dia--contenido">
+            <h2 class="menu__dia--title">Menú especial N° 3</h2>
+            <img src="../img/asado1.webp" alt="" class="menu__dia--img" />
+            <p class="menu__dia--parrafo">Vacio a las brasas con Guarnición</p>
+            <p class="menu__dia--precio">$2300</p>
+          </div>
+          <div class="menu__dia--contenido">
+            <h2 class="menu__dia--title">Menú especial N° 4</h2>
+            <img src="../img/langostinos.jpg" alt="" class="menu__dia--img" />
+            <p class="menu__dia--parrafo">
+              Langostinos al Vapor condimentados con Pimienta
+            </p>
+            <p class="menu__dia--precio">$3100</p>
+          </div>
+        </section>
+      </article>
+      <article class="menu__cotidiano--contenedor">
+        <div>
+          <h2 class="menu__cotidiano--titlePrincipal">Menúes Diarios</h2>
+        </div>
+        <section class="menu__cotidiano">
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img
+              src="../img/burger-4953465_1920.jpg"
+              alt=""
+              class="menu__dia--img"
+            />
+            <p class="menu__cotidiano--parrafo">
+              Hamburguesa Triple con lechuga, tomate, jamon y huevo
+            </p>
+            <p class="menu__cotidiano--precio">$1200</p>
+          </div>
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img
+              src="../img/costillitas-cerdo.jpg"
+              alt=""
+              class="menu__dia--img"
+            />
+            <p class="menu__cotidiano--parrafo">
+              Costillitas de Cerdo caramelizadas
+            </p>
+            <p class="menu__cotidiano--precio">$1600</p>
+          </div>
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img
+              src="../img/paella-española.jpg"
+              alt=""
+              class="menu__dia--img"
+            />
+            <p class="menu__cotidiano--parrafo">Paella española</p>
+            <p class="menu__cotidiano--precio">$2300</p>
+          </div>
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img src="../img/pescado.jpg" alt="" class="menu__dia--img" />
+            <p class="menu__cotidiano--parrafo">
+              Filet de Pescado con tempura de broccoli
+            </p>
+            <p class="menu__cotidiano--precio">$3100</p>
+          </div>
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img
+              src="../img/pollo-al-grill-con-papas.jpg"
+              alt=""
+              class="menu__dia--img"
+            />
+            <p class="menu__cotidiano--parrafo">
+              Pollo al Grill con guarnición de papas fritas
+            </p>
+            <p class="menu__cotidiano--precio">$1600</p>
+          </div>
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img src="../img/risotto.jpg" alt="" class="menu__dia--img" />
+            <p class="menu__cotidiano--parrafo">
+              Risotto perfumado con romero y sabia
+            </p>
+            <p class="menu__cotidiano--precio">$1600</p>
+          </div>
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img
+              src="../img/salchicha-asada.jpg"
+              alt=""
+              class="menu__dia--img"
+            />
+            <p class="menu__cotidiano--parrafo">
+              Salchica mixta asada, con guarnición de batata amarilla
+            </p>
+            <p class="menu__cotidiano--precio">$1600</p>
+          </div>
+          <div class="menu__cotidiano--contenido">
+            <h2 class="menu__cotidiano--title"></h2>
+            <img
+              src="../img/brocheta-de-verdura.jpg"
+              alt=""
+              class="menu__dia--img"
+            />
+            <p class="menu__cotidiano--parrafo">
+              Brochette de Verduras cocinadas al vapor condimentadas
+            </p>
+            <p class="menu__cotidiano--precio">$1600</p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <section>
+      <footer>
+        <div class="redes">
+          Buscanos en las Redes
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <p>Terminos y Condiciones ©Copyright 2023</p>
+          Creado por Claudio Cuenca
+        </div>
+      </footer>
+    </section>
+    <script src="../js/app.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/OKKO-logos.jpeg"
+      type="image/x-icon"
+      title="OKKO "
+    />
+    <!--Fuente de los iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Fuente de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--Estilos-->
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/form-acceso.css" />
+    <title>Restorant OKKO-Menú</title>
+  </head>
+  <body>
+    <!--Redes Flotante-->
+    <div class="container">
+      <input type="checkbox" id="btn-mas" />
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="btn-mas">
+        <label for="btn-mas" class="icon-mas">+</label>
+      </div>
+    </div>
+    <!--Modal-->
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <img src="" alt="" class="modal__img" id="modal__img" />
+      </div>
+      <div class="modal__boton" id="modal__boton">X</div>
+      <a class="modal__boton--acceso-ref" href="../index.html">Comprar</a>
+    </div>
+    <!--Fin del modal-->
+    <header class="encabezado">
+      <div class="encabezado__contenedor">
+        <div class="encabezado__contenedor--navegacion">
+          <div>
+            <a href="../index.html"
+              ><img
+                src="../img/OKKO-logos.jpeg"
+                class="header__logo"
+                alt="logo-okko"
+            /></a>
+          </div>
+          <nav id="nav" class="navegacion ocultar">
+            <a href="../index.html">Home</a>
+            <a href="menu.html">Menú</a>
+            <a href="#">Locales </a>
+            <a href="#">Chefs</a>
+            <a href="./acceso.html" class="active">Contacto</a>
+          </nav>
+          <div id="hamburguesa" class="hamburguesa">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <img class="banner__img" src="../img/contacto.jpg" alt="" />
+      <div class="banner__content">
+        <div>
+          <h1>Inicio de Sesión/Registro</h1>
+        </div>
+        <form class="form-acceso" action="POST">
+          <input
+            class="datos__form--usuario"
+            type="text"
+            name="usuario"
+            value=""
+            placeholder="  Usuario"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            title="Usuario sólo acepta letras y espacios en blanco"
+            required
+          />
+          <input
+            class="datos__form--contrasena"
+            type="password"
+            name="contrasena"
+            value=""
+            placeholder="  Contraseña"
+            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            required
+          />
+          <input class="datos__form--boton" type="submit" name="enviar" id="" />
+        </form>
+      </div>
+    </section>
+    <main></main>
+    <section>
+      <footer>
+        <div class="redes">
+          Buscanos en las Redes
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <p>Terminos y Condiciones ©Copyright 2023</p>
+          Creado por Claudio Cuenca
+        </div>
+      </footer>
+    </section>
+    <script src="../js/app.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

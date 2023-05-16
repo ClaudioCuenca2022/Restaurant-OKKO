@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/OKKO-logos.jpeg"
+      type="image/x-icon"
+      title="OKKO "
+    />
+    <!--Fuente de los iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Fuente de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--Estilos-->
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <title>Restorant OKKO</title>
+  </head>
+  <body>
+    <!--Redes Flotante-->
+    <div class="flotante">
+      <input type="checkbox" id="btn-mas" />
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="btn-mas">
+        <label for="btn-mas" class="icon-mas">+</label>
+      </div>
+    </div>
+    <header class="encabezado">
+      <div class="encabezado__contenedor">
+        <div class="encabezado__contenedor--navegacion">
+          <div>
+            <a href="index.html"
+              ><img
+                src="./img/OKKO-logos.jpeg"
+                class="header__logo"
+                alt="logo-okko"
+            /></a>
+          </div>
+          <nav id="nav" class="navegacion ocultar">
+            <a href="index.html" class="active">Home</a>
+            <a href="./pages/menu.html">Menú</a>
+            <a href="#">Locales </a>
+            <a href="#">Chefs</a>
+            <a href="./pages/acceso.html">Contacto</a>
+          </nav>
+          <div id="hamburguesa" class="hamburguesa">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <img class="banner__img" src="./img/ensalada.webp" alt="" />
+      <div class="banner__content">
+        El lugar para disfrutar de los mejores sabores, esta aquí !
+      </div>
+    </section>
+    <main class="main">
+      <section class="group group-color">
+        <div class="container">
+          <h2 class="main__title">Bienvenidos al Mejor Restorant</h2>
+          <p class="main__txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque non
+            ex facere eum rerum accusantium dolorem et nemo, dignissimos ipsum
+            ducimus architecto! Ea dolorum, eum cupiditate deserunt ullam optio
+            officia!
+          </p>
+        </div>
+      </section>
+      <section class="description">
+        <div class="description__flex">
+          <div class="description__50">
+            <img src="./img/pasta1.webp" alt="" />
+          </div>
+          <div class="description__50">
+            <h3 class="description_title">
+              Si la foto te gusta, imaginate probarlo!
+            </h3>
+            <p class="description__txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              beatae eius dignissimos. Eligendi error in nam. Numquam eligendi
+              doloribus minima adipisci rerum dicta sit molestiae? A minus
+              sapiente fuga molestias!
+            </p>
+            <a href="" class="btn btn--contact">Receta-Contacto</a>
+          </div>
+        </div>
+      </section>
+      <section class="group today__special">
+        <div>
+          <h2 class="today__special--title">Mirá nuestro Menú del día</h2>
+        </div>
+        <div class="container container--flex">
+          <div class="column column--50-25">
+            <img
+              src="./img/pasta2.webp"
+              alt="Pasta al verdeo"
+              class="today__special--img"
+            />
+            <div class="today__special--title">Menú especial N° 1</div>
+            <div class="today__special--p">
+              Pastas al Curri con lluvia de queso
+            </div>
+            <div class="today__special--precio">$1200</div>
+          </div>
+          <div class="column column--50-25">
+            <img
+              src="./img/pizza2.webp"
+              alt="Pizza calabresa"
+              class="today__special--img"
+            />
+            <div class="today__special--title">Menú especial N° 2</div>
+            <div class="today__special--p">Pizza Calabressa al molde</div>
+            <div class="today__special--precio">$1600</div>
+          </div>
+          <div class="column column--50-25">
+            <img
+              src="./img/asado1.webp"
+              alt="Plato asado"
+              class="today__special--img"
+            />
+            <div class="today__special--title">Menú especial N° 3</div>
+            <div class="today__special--p">
+              Vacio a las brasas con Guarnición
+            </div>
+            <div class="today__special--precio">$2300</div>
+          </div>
+          <div class="column column--50-25">
+            <img
+              src="./img/langostinos.jpg"
+              alt="Plato langostinos"
+              class="today__special--img"
+            />
+            <div class="today__special--title">Menú especial N° 4</div>
+            <div class="today__special--p">
+              Langostinos al Vapor condimentados con Pimienta
+            </div>
+            <div class="today__special--precio">$3100</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section>
+      <footer>
+        <div class="redes">
+          Buscanos en las Redes
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <p>Terminos y Condiciones ©Copyright 2023</p>
+          Creado por Claudio Cuenca
+        </div>
+      </footer>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

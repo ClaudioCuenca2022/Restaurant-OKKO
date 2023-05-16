@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-fondo: rgb(202, 199, 164);
+  --color-letra-nav: rgb(250, 250, 250);
+  --titulos: "Days One, sans-serif";
+  --hover-nav: orangered;
+  --precios: rgb(112, 111, 110);
+}
+
+body {
+  font-family: "Days One", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.header__logo {
+  width: 6rem;
+  height: 6rem;
+}
+.active {
+  border: 3px solid var(--color-letra-nav);
+  border-radius: 10px;
+}
+.banner {
+  position: relative;
+  background-color: var(--color-fondo);
+}
+/*oscurecimiento de foto de banner*/
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner__img {
+  width: 100%;
+  height: 400px;
+  /*lo de abajo evita que la imagen se estire, y asi con esta propiedad mantiene su forma*/
+  object-fit: cover;
+}
+.banner__content {
+  width: 90%;
+  color: var(--color-letra-nav);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/*revisar lo de abajo respecto a lo que indico la persona*/
+.encabezado__contenedor {
+  background-color: var(--color-fondo);
+  width: 100%;
+  margin: 0, auto;
+}
+.encabezado__contenedor--navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navegacion {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 15rem;
+  padding: 6.4rem 1rem;
+  background-color: var(--color-fondo);
+  z-index: 2;
+  transition: height 0.3s linear;
+}
+.navegacion.ocultar {
+  display: none;
+}
+.navegacion a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  padding: 1.5rem;
+  color: var(--color-letra-nav);
+}
+.navegacion a :first-of-type {
+  margin-top: 5rem;
+}
+.navegacion a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--color-fondo);
+  border: 3px solid var(--color-letra-nav);
+  border-radius: 10px;
+}
+/*Menu Hamburguesa*/
+.hamburguesa {
+  width: 2rem;
+  height: 2rem;
+  margin: 10px;
+  background: var(--color-fondo);
+  cursor: pointer;
+  z-index: 2;
+}
+/*Menu Hamburguesa (barritas)*/
+.hamburguesa span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  padding: 2px;
+  background: var(--color-letra-nav);
+  margin-top: 6px;
+  /*animacion del menu hamburguesa, desde transform-origin hasta line3*/
+  transform-origin: 0px 100%;
+  transition: all 0.3s;
+}
+.activeline1__bars-menu {
+  transform: rotate(45deg) translate(-2px, 2px);
+}
+.activeline2__bars-menu {
+  opacity: 0;
+  margin-left: -30px;
+}
+.activeline3__bars-menu {
+  transform: rotate(-45deg) translate(-2px, 2px);
+}
+/*----------------------------------------REDES FLOTANTE-------------------------------------------*/
+#btn-mas {
+  display: none;
+}
+.flotante {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  z-index: 3;
+}
+.redes a,
+.icon-mas {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: var(--color-letra-nav);
+  border-radius: 10px;
+  color: var(--color-fondo);
+  width: 55px;
+  height: 55px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.redes a:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+}
+.redes a {
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.icon-mas {
+  cursor: pointer;
+  background: var(--precios);
+}
+#btn-mas:checked ~ .btn-mas .icon-mas {
+  transform: rotate(137deg);
+  border-radius: 50%;
+  font-size: 3rem;
+}
+/*Fin de redes flotantes*/
+/*Descripcion*/
+.description {
+  display: flex;
+}
+.description__flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-fondo);
+  padding: 0 1rem;
+}
+.description__50 {
+  width: 49%;
+  height: 300px;
+}
+.description__50 img {
+  height: 230px;
+  object-fit: cover;
+}
+.btn--contact {
+  font-size: 1.5rem;
+  background-color: var(--precios);
+  color: var(--color-letra-nav);
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid var(--color-letra-nav);
+  border-radius: 5px;
+}
+/*Fin de Descripcion*/
+.group-color .container {
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+  padding: 1rem;
+  text-align: center;
+}
+.description__flex {
+  font-family: "Days One", sans-serif;
+  color: var(--color-letra-nav);
+}
+.description_title {
+  margin: 20px 0;
+  font-size: 2rem;
+}
+.description__txt {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+.main_title {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.column__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.column__txt {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.main__about__description {
+  background-color: var(--color-fondo);
+}
+.main__about__description .column:nth-child(2) {
+  padding: 0.63rem;
+  color: var(--color-letra-nav);
+}
+.today__special {
+  display: block;
+  padding: 20px 10px;
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+}
+.today__special .column {
+  margin-bottom: 2rem;
+}
+.today__special--img {
+  margin: auto;
+  max-width: 300px;
+}
+.today__special--title {
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  padding: 0.8rem 0;
+}
+.today__special--p {
+  text-align: center;
+  font-size: 1rem;
+  height: 20px;
+  padding: 0.8rem 0;
+  margin: 10px 0;
+}
+.today__special--precio {
+  margin-top: 30px;
+  padding-right: 1.6rem;
+  text-align: end;
+  color: var(--precios);
+}
+.container--flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.column--50-25 img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 0.8rem;
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+  backdrop-filter: blur(2px);
+}
+
+@media screen and (max-width: 480px) {
+  .banner__content {
+    font-size: 1.5rem;
+    top: 25%;
+  }
+  .container--flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .container--flex .column--50 {
+    width: 49%;
+    text-align: center;
+  }
+  .description_title {
+    font-size: 1rem;
+  }
+  .description__txt {
+    font-size: 0.7rem;
+  }
+  .btn--contact {
+    font-size: 0.8rem;
+  }
+  .column__title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .column__txt {
+    font-size: 0.7rem;
+  }
+  .btn--contact {
+    border: 5px solid white;
+    background-color: var(--color-fondo);
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .today__special--img {
+    padding-top: 5px;
+    border-radius: 5px;
+  }
+  .column--50-25 {
+    width: 300px;
+    background-color: var(--color-fondo);
+    color: var(--color-letra-nav);
+    border: 5px solid var(--color-letra-nav);
+    border-radius: 5px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner__content {
+    font-size: 1.5rem;
+  }
+  .container--flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .container--flex .column--50 {
+    width: 49%;
+    text-align: center;
+  }
+  .description_title {
+    font-size: 1rem;
+  }
+  .description__txt {
+    font-size: 0.7rem;
+  }
+  .btn--contact {
+    font-size: 0.8rem;
+  }
+
+  .column__title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .column__txt {
+    font-size: 0.5rem;
+  }
+  .btn--contact {
+    border: 5px solid white;
+    background-color: var(--color-fondo);
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .today__special--img {
+    padding-top: 5px;
+    border-radius: 5px;
+  }
+  .column--50-25 {
+    width: 300px;
+    background-color: var(--color-fondo);
+    color: var(--color-letra-nav);
+    border: 5px solid var(--color-letra-nav);
+    border-radius: 5px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,66 @@
+:root {
+  --color-fondo: rgb(202, 199, 164);
+  --color-letra-nav: rgb(250, 250, 250);
+  --titulos: "Days One, sans-serif";
+  --hover-nav: orangered;
+  --precios: rgb(112, 111, 110);
+  --form-success-color: green;
+  --form-error-color: #dc3d3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-fondo);
+}
+.banner__content {
+  top: 20%;
+}
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.form-acceso {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.datos__form--usuario {
+  width: 50%;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.datos__form--contrasena {
+  width: 50%;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.datos__form--boton {
+  width: 50%;
+  height: 40px;
+  color: var(--color-letra-nav);
+  background-color: var(--color-fondo);
+  font-family: var(--titulos);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.form-acceso > *[required]:invalid {
+  border: thin solid var(--form-error-color);
+}
+.form-acceso > *[required]:valid {
+  border: thin solid var(--form-success-color);
+}
+
+@media screen and (max-width: 480px) {
+  .baner__content {
+    top: 25%;
+  }
+}
