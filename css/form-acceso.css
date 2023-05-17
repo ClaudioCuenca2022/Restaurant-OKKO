@@ -16,6 +16,54 @@
 body {
   background-color: var(--color-fondo);
 }
+
+/*----------------------------------------REDES FLOTANTE-------------------------------------------*/
+#btn-mas {
+  display: none;
+}
+.container {
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  z-index: 3;
+}
+.redes a,
+.icon-mas {
+  display: block;
+  text-align: center;
+  line-height: 55px;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: var(--color-letra-nav);
+  border-radius: 10px;
+  color: var(--color-fondo);
+  width: 55px;
+  height: 55px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.redes a:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-letra-nav);
+}
+.redes a {
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.icon-mas {
+  cursor: pointer;
+  background: var(--precios);
+}
+#btn-mas:checked ~ .btn-mas .icon-mas {
+  transform: rotate(137deg);
+  border-radius: 50%;
+  font-size: 3rem;
+}
 .banner__content {
   top: 20%;
 }
