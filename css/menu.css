@@ -236,7 +236,7 @@ body {
 }
 
 /*-----------------------------------------MEDIAQUERY--------------------------------------------*/
-@media screen and (max-width: 390px) {
+ {
   .menu__cotidiano--contenido {
     display: flex;
 

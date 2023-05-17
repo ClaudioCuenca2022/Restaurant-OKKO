@@ -23,6 +23,18 @@ h1 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
+.form__paragraph {
+  font-size: 0.8rem;
+  padding: 5px;
+  text-decoration: none;
+}
+.form__link {
+  text-decoration: none;
+  color: white;
+}
+.form__link:hover {
+  color: var(--color-fondo);
+}
 
 .form-acceso {
   display: flex;
@@ -32,17 +44,17 @@ h1 {
 }
 
 .datos__form--usuario {
-  width: 50%;
+  width: 40%;
   height: 35px;
   margin-bottom: 20px;
 }
 .datos__form--contrasena {
-  width: 50%;
+  width: 40%;
   height: 35px;
   margin-bottom: 20px;
 }
 .datos__form--boton {
-  width: 50%;
+  width: 30%;
   height: 40px;
   color: var(--color-letra-nav);
   background-color: var(--color-fondo);
@@ -58,9 +70,13 @@ h1 {
 .form-acceso > *[required]:valid {
   border: thin solid var(--form-success-color);
 }
-
 @media screen and (max-width: 480px) {
-  .baner__content {
-    top: 25%;
+  .datos__form--usuario,
+  .datos__form--contrasena {
+    width: 80%;
+  }
+  .datos__form--boton {
+    font-size: 1.2rem;
+    width: 40%;
   }
 }

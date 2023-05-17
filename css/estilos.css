@@ -272,6 +272,7 @@ img {
 .today__special--p {
   text-align: center;
   font-size: 1rem;
+  width: 90%;
   height: 20px;
   padding: 0.8rem 0;
   margin: 10px 0;
