@@ -236,25 +236,23 @@ body {
 }
 
 /*-----------------------------------------MEDIAQUERY--------------------------------------------*/
- {
-  .menu__cotidiano--contenido {
-    display: flex;
 
-    width: 43%;
-    height: 10px;
-    font-size: 0.5rem;
-  }
+.menu__cotidiano--contenido {
+  display: flex;
+  width: 43%;
+  height: 10px;
+  font-size: 0.5rem;
+}
 
-  .redes a,
-  .icon-mas {
-    line-height: 55px;
-    font-size: 2rem;
-    width: 40px;
-    height: 40px;
-  }
-  .container {
-    bottom: 10px;
-  }
+.redes a,
+.icon-mas {
+  line-height: 55px;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+}
+.container {
+  bottom: 10px;
 }
 
 @media screen and (max-width: 700px) {

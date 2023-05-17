@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-fondo: rgb(202, 199, 164);
+  --color-letra-nav: rgb(250, 250, 250);
+  --titulos: "Days One, sans-serif";
+  --hover-nav: orangered;
+  --precios: rgb(112, 111, 110);
+}
+
+body {
+  font-family: "Days One", sans-serif;
+}
+
+.locales__gral {
+  display: flex;
+  margin-left: 55px;
+}
+.local__img {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+}
+.local__descripcion {
+  width: 300px;
+  margin: 10px 10px;
+}

@@ -28,7 +28,7 @@
     <!--Estilos-->
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/menu.css" />
-    <link rel="stylesheet" href="../css/form-acceso.css" />
+    <link rel="stylesheet" href="../css/locales.css" />
     <title>Restorant OKKO-Menú</title>
   </head>
   <body>
@@ -59,7 +59,7 @@
           <nav id="nav" class="navegacion ocultar">
             <a href="../index.html">Home</a>
             <a href="menu.html">Menú</a>
-            <a href="#">Locales </a>
+            <a href="./locales.html">Locales </a>
             <a href="#">Chefs</a>
             <a href="acceso.html" class="active">Contacto</a>
           </nav>
@@ -73,32 +73,54 @@
     </header>
     <section class="banner">
       <img class="banner__img" src="../img/contacto.jpg" alt="" />
+      <div class="banner__content">Nuestros Locales!</div>
     </section>
     <main>
-      <section class="form">
-        <div>
-          <h1>Inicio de Sesión / Registro</h1>
+      <section class="menu__dia">
+        <div class="menu__dia--contenido">
+          <h3 class="menu__dia--title">Local Avellaneda</h3>
+          <img
+            src="../img/lugares/restaurant1.jpg"
+            alt=""
+            class="menu__dia--img"
+          />
+          <p class="menu__dia--parrafo">Direccion: Emilio Mitre 93</p>
+          <p class="menu__dia--parrafo">Tel.: 1122334455</p>
+          <p class="menu__dia--parrafo">e-mail: okko@okko.com.ar</p>
         </div>
-        <form class="form-acceso" action="POST">
-          <input
-            type="text"
-            name="usuario"
-            value=""
-            placeholder="Escriba su Usuario"
-            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-            title="Usuario sólo acepta letras y espacios en blanco"
-            required
+        <div class="menu__dia--contenido">
+          <h3 class="menu__dia--title">Local Capital Federal</h3>
+          <img
+            src="../img/lugares/restaurant3.jpg"
+            alt=""
+            class="menu__dia--img"
           />
-          <input
-            type="password"
-            name="contrasena"
-            value=""
-            placeholder="Escriba su Contraseña"
-            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
-            required
+          <p class="menu__dia--parrafo">Direccion: Sarmiento 329</p>
+          <p class="menu__dia--parrafo">Tel.: 1122334455</p>
+          <p class="menu__dia--parrafo">e-mail: okko@okko.com.ar</p>
+        </div>
+        <div class="menu__dia--contenido">
+          <h3 class="menu__dia--title">Local Mar del Plata</h3>
+          <img
+            src="../img/lugares/restaurant2.jpg"
+            alt=""
+            class="menu__dia--img"
           />
-          <input type="submit" name="enviar" id="" />
-        </form>
+          <p class="menu__dia--parrafo">Direccion: Av.Costanera 25</p>
+          <p class="menu__dia--parrafo">Tel.: 1122334455</p>
+          <p class="menu__dia--parrafo">e-mail: okko@okko.com.ar</p>
+        </div>
+        <div class="menu__dia--contenido">
+          <h3 class="menu__dia--title">Local San Bernardo</h3>
+          <img
+            src="../img/lugares/restaurant4.jpg"
+            alt=""
+            class="menu__dia--img"
+          />
+          <p class="menu__dia--parrafo">Direccion: Calle 25 Nº 354</p>
+          <p class="menu__dia--parrafo">Tel.: 1122334455</p>
+          <p class="menu__dia--parrafo">e-mail: okko@okko.com.ar</p>
+        </div>
       </section>
     </main>
     <section>
