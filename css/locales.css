@@ -76,16 +76,3 @@ body {
   width: 300px;
   margin: 10px 10px;
 }
-
-@media screen and (max-width: 1450px) {
-  .container {
-    bottom: 10px;
-  }
-  .redes a,
-  .icon-mas {
-    line-height: 50px;
-    font-size: 2rem;
-    width: 55px;
-    height: 55px;
-  }
-}

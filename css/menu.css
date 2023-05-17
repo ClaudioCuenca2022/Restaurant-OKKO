@@ -244,17 +244,6 @@ body {
   font-size: 0.5rem;
 }
 
-.redes a,
-.icon-mas {
-  line-height: 55px;
-  font-size: 2rem;
-  width: 40px;
-  height: 40px;
-}
-.container {
-  bottom: 10px;
-}
-
 @media screen and (max-width: 700px) {
   .menu__cotidiano--contenido,
   .menu__dia--contenido:hover {
@@ -266,16 +255,6 @@ body {
   .modal__img {
     width: 80%;
   }
-  .container {
-    bottom: 10px;
-  }
-  .redes a,
-  .icon-mas {
-    line-height: 35px;
-    font-size: 2rem;
-    width: 20px;
-    height: 20px;
-  }
 }
 
 @media screen and (max-width: 1260px) {
@@ -286,16 +265,6 @@ body {
   .modal__img {
     width: 70%;
   }
-  .container {
-    bottom: 10px;
-  }
-  .redes a,
-  .icon-mas {
-    line-height: 35px;
-    font-size: 2rem;
-    width: 40px;
-    height: 40px;
-  }
 }
 @media screen and (min-width: 1261px) {
   .menu__cotidiano--contenido {
@@ -305,17 +274,5 @@ body {
   }
   .modal__img {
     width: 60%;
-  }
-}
-@media screen and (max-width: 1450px) {
-  .container {
-    bottom: 10px;
-  }
-  .redes a,
-  .icon-mas {
-    line-height: 50px;
-    font-size: 2rem;
-    width: 55px;
-    height: 55px;
   }
 }
