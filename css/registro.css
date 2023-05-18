@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-acceso {
+  transform: translateY(-20%);
+}
+
+.titulo__registro {
+  position: relative;
+  top: -70px;
+}
+.banner__img {
+  height: 450px;
+  /*lo de abajo evita que la imagen se estire, y asi con esta propiedad mantiene su forma*/
+  object-fit: cover;
+}
+footer {
+  padding-left: 50px;
+}

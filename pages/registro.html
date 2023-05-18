@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/form-acceso.css" />
+    <link rel="stylesheet" href="../css/registro.css" />
     <title>Restorant OKKO-Menú</title>
   </head>
   <body>
@@ -69,7 +70,8 @@
             <a href="../index.html">Home</a>
             <a href="menu.html">Menú</a>
             <a href="./locales.html">Locales </a>
-            <a href="./acceso.html" class="active">Acceso</a>
+            <a href="./acceso.html">Acceso</a>
+            <a href="./registro.html" class="active">Registro</a>
           </nav>
           <div id="hamburguesa" class="hamburguesa">
             <span class="line1__bars-menu"></span>
@@ -80,14 +82,10 @@
       </div>
     </header>
     <section class="banner">
-      <img class="banner__img" src="../img/contacto.jpg" alt="" />
+      <img class="banner__img" src="../img/registro.jpg" alt="" />
       <div class="banner__content">
         <div>
-          <h1>Inicio de Sesión/Registro</h1>
-          <p class="form__paragraph">
-            ¿Aún no estas registrado?
-            <a href="./registro.html" class="form__link">Entra Aquí</a>
-          </p>
+          <h1 class="titulo__registro">Registrate</h1>
         </div>
         <form class="form-acceso" action="POST">
           <input
@@ -98,6 +96,42 @@
             placeholder="  Usuario"
             pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
             title="Usuario sólo acepta letras y espacios en blanco"
+            required
+          />
+          <input
+            class="datos__form--contrasena"
+            type="password"
+            name="contrasena"
+            value=""
+            placeholder="  Contraseña"
+            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            required
+          />
+          <input
+            class="datos__form--contrasena"
+            type="password"
+            name="contrasena"
+            value=""
+            placeholder="  Contraseña"
+            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            required
+          />
+          <input
+            class="datos__form--contrasena"
+            type="password"
+            name="contrasena"
+            value=""
+            placeholder="  Contraseña"
+            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            required
+          />
+          <input
+            class="datos__form--contrasena"
+            type="password"
+            name="contrasena"
+            value=""
+            placeholder="  Contraseña"
+            pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
             required
           />
           <input
