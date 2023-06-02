@@ -306,7 +306,7 @@ footer {
 @media screen and (max-width: 480px) {
   .banner__content {
     font-size: 1.5rem;
-    top: 25%;
+    top: 30%;
   }
   .container--flex {
     flex-direction: column;
