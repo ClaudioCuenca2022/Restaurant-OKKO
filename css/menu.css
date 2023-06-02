@@ -28,7 +28,7 @@ body {
 .icon-mas {
   display: block;
   text-align: center;
-  line-height: 55px;
+  line-height: 50px;
   text-decoration: none;
   font-size: 2rem;
   background-color: var(--color-letra-nav);
